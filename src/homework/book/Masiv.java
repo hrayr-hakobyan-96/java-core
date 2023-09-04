@@ -49,25 +49,84 @@ public class Masiv {
 //            System.out.println();
 //
 //        }
-        int[][] array = new int[4][4];
+        //հայտարարել 50 հատանոց մասիվ
+        int[] array = new int[50];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+            System.out.print(i + "-");
+        }
+        System.out.println();
+// մասիվի ամենամեծ թիվը
+        int max = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
 
-            array[0] = new int[2];
-            array[1] = new int[2];
-            array[2] = new int[2];
-            array[3] = new int[3];
+            }
+        }
+        System.out.print(max);
+        System.out.println();
+        // մասիվի ամենափոքր թիվը
+        int min = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
 
-                array[0][1] = 1;
-                array[1] [1]= 2;
-                array[2][1] =3;
-                array[3][1] =4 ;
-                array[0][2] = 10;
-                array[1] [3]= 20;
-                array[2][4] =30;
-                array[3][5] =40 ;
+        }
+        System.out.println(min);
+        System.out.println();
+        //մասիվի զույգ էլէմեննտները
+        for (int i = 0; i < array.length; i++) {
+            int k = i + 1;
+            if (array[i] % 2 == 0) {
+                k = array[i];
+                System.out.print(k + " ");
 
 
-            System.out.println(array [1][3]);
+            }
+
+        }
+        System.out.println(
+
+        );
+        //մասիվի կենտ  էլէմեննտները
+        for (int i = 0; i < array.length; i++) {
+
+            int f = i + 1;
+            if (array[i] % 2 != 0) {
+                f = array[i];
+                System.out.print(f + " ");
+            }
+
+        }
+        //մասիվի գումարը
+        System.out.println();
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+
+            j = j + i;
+
+        }
+
+        System.out.print(j);
+        // մասիվի միջին թվաբանականը
+        System.out.println();
+       double a=0;
+        for (int i = 0; i < array.length; i++) {
+            a=a+i;
+
+
+        }
+        System.out.print(a/array.length);
+        System.out.println();
+
+
+        int i=0;
+        for (int k = 1; k <= 15; k++) {
+            System.out.print(k+" ");
         }
 
     }
+}
 
