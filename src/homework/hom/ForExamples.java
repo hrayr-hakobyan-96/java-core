@@ -39,9 +39,20 @@ public class ForExamples {
 //            }
 //            System.out.print(nam);
 //        }
+//
+//        String leng = "Armenya";
+//        if (leng.equals("erevan ")){
+//            System.out.println("Gyumri");}
+//        else System.out.println("vrastan");
+//         else if (leng.equals("Vrastan")) {
+//            System.out.println("Tbilisi");
+//        } else System.out.println("axlqalak");
 
     }
 }
+
+
+
 
 
 
